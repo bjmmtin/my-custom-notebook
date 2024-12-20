@@ -43,6 +43,9 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: List files
+          run: ls -R  # List files in the repository to check the path
+          
       - name: Run Script
         run: |
           python script.py || { echo 'Script failed'; exit 1; }
