@@ -48,7 +48,7 @@ jobs:
 
       - name: Run Script
         run: |
-          python script.py || { echo 'Script failed'; }
+          python ./script.py || { echo 'Script failed'; }
 
       - name: Deploy to GitHub Pages
         id: deployment
