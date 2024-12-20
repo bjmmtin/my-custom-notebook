@@ -44,7 +44,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List files
-          run: ls -R  
+        run: ls -R  
 
       - name: Run Script
         run: |
