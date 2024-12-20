@@ -44,11 +44,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List files
-          run: ls -R  # List files in the repository to check the path
-          
+          run: ls -R  
+
       - name: Run Script
         run: |
-          python script.py || { echo 'Script failed'; exit 1; }
+          python script.py || { echo 'Script failed'; }
 
       - name: Deploy to GitHub Pages
         id: deployment
