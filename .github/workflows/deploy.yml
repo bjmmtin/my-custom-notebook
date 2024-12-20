@@ -43,9 +43,10 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: Run Script
+        run: |
+          python script.py || { echo 'Script failed'; exit 1; }
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Run Script
-        run: |
-          python script.py  # Run your Python script before deployment
