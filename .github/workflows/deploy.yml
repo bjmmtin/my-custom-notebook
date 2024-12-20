@@ -46,6 +46,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      -- name: Run Script
+      - name: Run Script
         run: |
-          py script.py  # Run your Python script before deployment
+          python script.py  # Run your Python script before deployment
